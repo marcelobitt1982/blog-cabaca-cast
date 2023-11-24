@@ -20,6 +20,19 @@ body {
     
 }
 
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0em;
+    background-image: linear-gradient(to right, rgb(255, 145, 0), rgb(208, 255, 0));
+    min-height: 0px;
+    margin: 0px;
+    padding: 25px;
+    box-shadow: 2px 7px 7px black;
+    border-radius: 15px 0px;
+    columns: 4;
+    
+}
+
 header {
     min-height: 80px;
     text-align: center;
