@@ -11,7 +11,7 @@ body {
     background-attachment: fixed;
 }
 
-img {
+selection > img {
     margin: 0px;
     width: 100%;
     border-radius: 20px 0px;
