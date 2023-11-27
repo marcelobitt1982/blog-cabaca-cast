@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+
+body {
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(imagens/fundo1.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#redes-sociais {
+    text-align: center;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+}
+
+header {
+    min-height: 80px;
+    text-align: center;
+    text-align: center;
+
+}
+
+header > img {
+    max-width: 400px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+header > h3 {
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, rgb(255, 145, 0), rgb(208, 255, 0));
+    min-height: 0px;
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+    box-shadow: 2px 7px 7px black;
+    border-radius: 15px 0px;
+    text-align: center;
+
+}
+
+li {
+    font-size: 0.8em;
+    min-height: 5px;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    columns: 3;
+}
+
+ul > li > a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(255, 145, 0), rgb(208, 255, 0));
+    color: rgb(0, 0, 0);
+    border-top: 2px solid rgba(0, 0, 0, 0);
+}
+
+h1 {
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, rgb(255, 145, 0), rgb(208, 255, 0));
+    min-height: 0px;
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+    box-shadow: 2px 7px 7px black;
+    border-radius: 15px 0px;
+    text-align: center;
+}
