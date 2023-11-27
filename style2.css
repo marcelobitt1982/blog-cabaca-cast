@@ -36,18 +36,18 @@ menu > ul {
 
 menu > ul > li > a {
     background-color: gray;
-    display: block;
-    padding: 10px;
+    display: flex;
+    padding: 20px;
     text-decoration: none;
     text-align: center;
-    background-color: rgb(87, 87, 87);
-    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.400);
+    color: rgb(255, 255, 255);
     border-top: 2px solid rgba(128, 128, 128, 0);
     columns: 5;
 }
 
 menu > ul > li > a:hover {
-    background-color: gray;
+    background-color: rgb(29, 29, 185);
 }
 
 
