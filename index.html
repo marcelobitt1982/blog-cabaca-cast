@@ -81,7 +81,26 @@
     <footer>
         <h4>Site criado por Marcelo Bittencourt</h4>
     </footer>
+
+
+    <!-- exibe a contagem em um elemento -->
+
+    <p id="visitas">Número de visitas: 0</p>
+<script>
+// Obter o elemento que mostra o número de visitas
+var visitas = document.getElementById("visitas");
+
+// Obter o número de visitas do localStorage ou iniciar com 0
+var contador = localStorage.getItem("contador") || 0;
+
+// Incrementar o contador e atualizar o localStorage
+contador++;
+localStorage.setItem("contador", contador);
+
+// Atualizar o texto do elemento com o contador
+visitas.textContent = "Número de visitas: " + contador;
+</script>
+
 </body>
 </html>
-     
      
