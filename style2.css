@@ -35,7 +35,11 @@ menu {
 menu > ul {
     
     list-style-type: none;
+    
+    
 }
+
+
 
 menu > ul > li > a {
     background-color: gray;
@@ -49,6 +53,8 @@ menu > ul > li > a {
     columns: 3;
     flex-shrink: 1;
     flex-grow: 1;
+    
+    
     
 }
 
