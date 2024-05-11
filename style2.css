@@ -22,7 +22,7 @@ span#burguer {
 }
 
 span#burguer:hover {
-    background-color: rgb(29, 29, 185);
+    background-color: rgb(243, 220, 16);
     color: black;
 }
 
@@ -47,7 +47,7 @@ menu > ul > li > a {
 }
 
 menu > ul > li > a:hover {
-    background-color: rgb(29, 29, 185);
+    background-color: rgb(243, 220, 16);
 }
 
 
