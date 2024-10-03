@@ -6,7 +6,7 @@ body {
     margin: auto;
     margin-bottom: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    background: url(imagens/fundo2.jpg) no-repeat top center;
+    background: url(imagens/fundo1.jpg) no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -22,7 +22,7 @@ span#burguer {
 }
 
 span#burguer:hover {
-    background-color: rgb(243, 220, 16);
+    background-color: rgba(255, 255, 255, 0.555);
     color: black;
 }
 
@@ -78,7 +78,7 @@ menu > ul > li > a {
 }
 
 menu > ul > li > a:hover {
-    background-color: rgb(243, 220, 16);
+    background-color: rgba(255, 255, 255, 0.377);
     
     
 }
@@ -135,7 +135,7 @@ header > img {
 
 header > h3 {
     font-size: 1.5em;
-    background-image: linear-gradient(to right, rgb(255, 145, 0), rgb(208, 255, 0));
+    background-color: rgba(255, 255, 255, 0.555);
     min-height: 0px;
     text-align: center;
     margin: 20px;
@@ -173,7 +173,7 @@ ul > li > a{
 
 h1 {
     font-size: 1.5em;
-    background-image: linear-gradient(to right, rgb(255, 145, 0), rgb(208, 255, 0));
+    background-color: rgba(255, 255, 255, 0.555);
     min-height: 0px;
     text-align: center;
     margin: 20px;
@@ -185,12 +185,12 @@ h1 {
 }
 
  h5 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 1.5em;
     margin: 5px;
     padding: 0px;
-    background-color: rgba(255, 255, 255, 0.384);
+    background-color: rgba(4, 1, 19, 0.5);
     border-radius: 10px;
     box-shadow: 2px 7px 7px black;
 }
@@ -215,7 +215,7 @@ footer  > h4 {
     font-size: 1.5em;
     margin: 5px;
     padding: 0px;
-    background-color: rgba(255, 255, 255, 0.384);
+    background-color: rgba(255, 230, 3, 0.74);
     border-radius: 5px;
     box-shadow: 2px 7px 7px black;
     
