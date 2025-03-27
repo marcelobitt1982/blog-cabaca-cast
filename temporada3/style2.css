@@ -1,6 +1,52 @@
 @charset "UTF-8";
 
 
+#splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.video {
+    width: 20%; /* Define o vídeo como 50% da largura da tela */
+    height: auto; /* Mantém a proporção do vídeo */
+    max-width: 400px; /* Limita a largura máxima para 400px */
+    max-height: 300px; /* Limita a altura máxima para 300px */
+    margin: 0 auto; /* Centraliza o vídeo na tela */
+    display: block;
+}
+
+
+.logo {
+    animation: fadeInOut 3s linear;
+    max-width: 100px;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+
+#main-content {
+    display: none;
+}
+
+
+
+
 body {
     max-width: 1000px;
     margin: auto;

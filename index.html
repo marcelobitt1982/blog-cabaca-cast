@@ -10,6 +10,38 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4013633713257762"
      crossorigin="anonymous"></script>
     
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                const splashScreen = document.getElementById("splash-screen");
+                if (splashScreen) {
+                    splashScreen.style.display = "none";
+                }
+      
+                const mainContent = document.getElementById("main-content");
+                if (mainContent) {
+                    mainContent.style.display = "block";
+                }
+            }, 3000);
+        });
+      </script>
+      
+
+      <div id="splash-screen">
+        <video autoplay muted playsinline class="video">
+            <source src="cabaca-abertura.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos no formato MP4.
+        </video>
+    </div>
+    
+        
+        <div id="main-content" style="display: none;">
+            
+    
+        
+        
+
+
 </head>
 <body onresize="mudouTamanho()">
     <header>
@@ -114,6 +146,9 @@ visitas.textContent = "Número de visitas: " + contador;
 
 </body>
 </html>
+
+</div>
+
 
 <!-- <li><a href="geires.html">DRA. GEIRES</a></li>
         <li><a href="antonioejezreel.html">ANTONIO E JEZREEL</a></ 
