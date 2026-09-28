@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@600;700&family=Poppins:wght@300;400;600&display=swap');
 
 /* =========================================================
-   FUNDO DINÂMICO QUE MUTA DE LARANJA CLARO PARA ESCURO
+   FUNDO DINÂMICO AZUL BEBÊ / AZUL CLARO
    ========================================================= */
 body {
     max-width: 1000px;
@@ -10,15 +10,15 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     
-    /* Animação do gradiente de cor de fundo */
-    background: linear-gradient(-45deg, #ff7b00, #ffae00, #e65100, #ff9100);
+    /* Animação do gradiente em tons de azul bebê e azul claro */
+    background: linear-gradient(-45deg, #a0c4ff, #b9f2ff, #89cff0, #d0f4de);
     background-size: 400% 400%;
-    animation: gradienteLaranja 12s ease infinite;
+    animation: gradienteAzul 12s ease infinite;
     position: relative;
     overflow-x: hidden;
 }
 
-@keyframes gradienteLaranja {
+@keyframes gradienteAzul {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
@@ -38,7 +38,7 @@ body {
 }
 
 .wave {
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-400-50s-244.5 50-400 50v31.8h800v-31.8z' fill='%23ffffff' fill-opacity='0.25'/%3E%3C/svg%3E") repeat-x;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-400-50s-244.5 50-400 50v31.8h800v-31.8z' fill='%23ffffff' fill-opacity='0.45'/%3E%3C/svg%3E") repeat-x;
     position: absolute;
     bottom: 0;
     width: 6400px;
@@ -50,7 +50,7 @@ body {
 .wave:nth-of-type(2) {
     bottom: -10px;
     animation: wave 12s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 10s ease -1.25s infinite;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 @keyframes wave {
@@ -64,7 +64,7 @@ body {
 }
 
 /* =========================================================
-   BOTÃO "VOLTAR AO INÍCIO" DESTACADO
+   BOTÃO "VOLTAR AO INÍCIO" DESTACADO NEON
    ========================================================= */
 .btn-inicio-container {
     text-align: center;
@@ -75,7 +75,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(10, 10, 20, 0.75);
+    background: rgba(5, 20, 40, 0.85);
     backdrop-filter: blur(10px);
     color: #00f0ff;
     padding: 10px 22px;
@@ -84,20 +84,20 @@ body {
     font-size: 0.85em;
     font-weight: 700;
     border-radius: 25px;
-    border: 1px solid #00f0ff;
-    box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
+    border: 2px solid #00f0ff;
+    box-shadow: 0 0 15px #00f0ff, inset 0 0 10px #00f0ff;
     transition: all 0.3s ease;
 }
 
 .btn-inicio:hover {
     background: #00f0ff;
-    color: #000000;
-    box-shadow: 0 0 20px #00f0ff;
+    color: #030d1a;
+    box-shadow: 0 0 25px #00f0ff, 0 0 50px #00f0ff;
     transform: scale(1.05);
 }
 
 /* =========================================================
-   ELEMENTOS CYBERPUNK / NEON
+   ELEMENTOS CYBERPUNK / NEON AZUL
    ========================================================= */
 header {
     min-height: 80px;
@@ -109,13 +109,13 @@ header > img {
     width: 90%;
     margin: 10px auto;
     display: block;
-    filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0 0 15px rgba(0, 240, 255, 0.8));
 }
 
 .banner-frase {
-    background: rgba(10, 10, 15, 0.75);
+    background: rgba(5, 18, 38, 0.85);
     backdrop-filter: blur(10px);
-    color: #00f0ff;
+    color: #80ebd9;
     font-size: 1.2em;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 700;
@@ -125,37 +125,37 @@ header > img {
     border-radius: 12px;
     margin: 20px auto;
     max-width: 90%;
-    border: 1px solid #ff9100;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), inset 0 0 10px rgba(0, 240, 255, 0.2);
-    text-shadow: 0 0 8px rgba(0, 240, 255, 0.8);
+    border: 2px solid #00f0ff;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.5), inset 0 0 12px rgba(0, 240, 255, 0.3);
+    text-shadow: 0 0 10px #00f0ff;
 }
 
 h1 {
     font-size: 1.4em;
     font-family: 'Orbitron', sans-serif;
-    background: rgba(15, 10, 25, 0.85);
-    color: #ff9100;
+    background: rgba(5, 18, 38, 0.9);
+    color: #00f0ff;
     text-align: center;
     margin: 20px auto;
     padding: 10px 15px;
     border-radius: 12px;
-    border: 1px solid #00f0ff;
-    box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
-    text-shadow: 0 0 8px #ff9100;
+    border: 2px solid #7000ff;
+    box-shadow: 0 0 20px #00f0ff, 0 0 30px #7000ff;
+    text-shadow: 0 0 10px #00f0ff;
 }
 
 h2 {
     display: inline-block;
-    background: rgba(10, 10, 15, 0.8);
+    background: rgba(5, 18, 38, 0.85);
     backdrop-filter: blur(8px);
     color: #00f0ff;
     padding: 6px 20px;
     font-size: 20px;
     font-family: 'Orbitron', sans-serif;
-    border: 1px solid #ff9100;
-    box-shadow: 0 0 12px rgba(255, 145, 0, 0.6);
+    border: 2px solid #00f0ff;
+    box-shadow: 0 0 15px #00f0ff;
     border-radius: 20px;
-    text-shadow: 0 0 6px #00f0ff;
+    text-shadow: 0 0 8px #00f0ff;
     text-align: center;
 }
 
@@ -175,11 +175,11 @@ h2 {
 }
 
 .card {
-    background: rgba(15, 15, 25, 0.75);
+    background: rgba(5, 18, 38, 0.85);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 240, 255, 0.4);
+    border: 2px solid #00f0ff;
     border-radius: 16px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 18px rgba(0, 240, 255, 0.4);
     width: 260px;
     padding: 15px;
     margin: 0 auto;
@@ -188,8 +188,8 @@ h2 {
 
 .card:hover {
     transform: translateY(-5px);
-    border-color: #ff9100;
-    box-shadow: 0 0 20px rgba(255, 145, 0, 0.6);
+    border-color: #7000ff;
+    box-shadow: 0 0 25px #00f0ff, 0 0 35px #7000ff;
 }
 
 .card img {
@@ -201,6 +201,8 @@ h2 {
     border-radius: 10px;
     display: block;
     margin: 0 auto 10px auto;
+    border: 1px solid #00f0ff;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
 }
 
 .card h3 {
@@ -213,19 +215,19 @@ h2 {
 .btn {
     display: inline-block;
     padding: 8px 18px;
-    background: linear-gradient(90deg, #ff9100, #ff0055);
+    background: linear-gradient(90deg, #00f0ff, #7000ff);
     color: #ffffff !important;
     text-decoration: none;
     border-radius: 20px;
     font-family: 'Orbitron', sans-serif;
     font-size: 0.8em;
     font-weight: 700;
-    box-shadow: 0 0 10px rgba(255, 0, 85, 0.6);
+    box-shadow: 0 0 15px #00f0ff;
     transition: all 0.3s ease;
 }
 
 .btn:hover {
-    box-shadow: 0 0 18px rgba(255, 145, 0, 0.9);
+    box-shadow: 0 0 25px #00f0ff, 0 0 35px #7000ff;
     transform: scale(1.05);
 }
 
@@ -233,7 +235,7 @@ h2 {
    MENU E BOTÃO BURGUER
    ========================================================= */
 span#burguer {
-    background: rgba(10, 10, 20, 0.65);
+    background: rgba(5, 18, 38, 0.85);
     backdrop-filter: blur(8px);
     color: #00f0ff;
     display: block;
@@ -245,15 +247,15 @@ span#burguer {
     border-radius: 20px;
     font-family: 'Orbitron', sans-serif;
     font-size: 0.8em;
-    border: 1px solid #00f0ff;
-    box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+    border: 2px solid #00f0ff;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
     transition: all 0.3s ease;
 }
 
 span#burguer:hover {
-    background: rgba(255, 145, 0, 0.8);
-    color: #ffffff;
-    box-shadow: 0 0 15px rgba(255, 145, 0, 0.8);
+    background: #00f0ff;
+    color: #030d1a;
+    box-shadow: 0 0 20px #00f0ff;
 }
 
 span#burguer img {
@@ -282,7 +284,7 @@ menu > ul > li, ul > li {
 }
 
 menu > ul > li > a, ul > li > a {
-    background: rgba(10, 10, 20, 0.6);
+    background: rgba(5, 18, 38, 0.85);
     backdrop-filter: blur(8px);
     color: #ffffff;
     display: inline-block;
@@ -292,14 +294,15 @@ menu > ul > li > a, ul > li > a {
     font-weight: 700;
     font-size: 0.88em;
     border-radius: 12px;
-    border: 1px solid rgba(255, 145, 0, 0.5);
+    border: 1px solid #00f0ff;
+    box-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
     transition: all 0.3s ease;
 }
 
 menu > ul > li > a:hover, ul > li > a:hover {
     background: #00f0ff;
-    color: #000000;
-    box-shadow: 0 0 12px #00f0ff;
+    color: #030d1a;
+    box-shadow: 0 0 18px #00f0ff;
     border-color: #ffffff;
 }
 
@@ -312,7 +315,7 @@ selection > img {
     height: auto;
     border-radius: 16px;
     border: 2px solid #00f0ff;
-    box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.6);
     display: block;
 }
 
@@ -323,11 +326,11 @@ h5 {
     line-height: 1.7;
     margin: 10px auto;
     padding: 20px 25px;
-    background: rgba(10, 10, 15, 0.75);
+    background: rgba(5, 18, 38, 0.85);
     backdrop-filter: blur(12px);
     border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #00f0ff;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
 }
 
 /* Redes Sociais */
@@ -339,15 +342,15 @@ section#redes-sociais img {
     width: 42px;
     margin: 6px;
     border-radius: 50%;
-    border: 2px solid #ff9100;
-    box-shadow: 0 0 10px rgba(255, 145, 0, 0.5);
+    border: 2px solid #00f0ff;
+    box-shadow: 0 0 12px #00f0ff;
     transition: all 0.3s ease;
 }
 
 section#redes-sociais img:hover {
     transform: scale(1.15);
-    box-shadow: 0 0 15px #00f0ff;
-    border-color: #00f0ff;
+    box-shadow: 0 0 20px #00f0ff, 0 0 30px #7000ff;
+    border-color: #7000ff;
 }
 
 /* Footer */
@@ -358,7 +361,8 @@ footer > h4 {
     font-size: 0.9em;
     margin-top: 25px;
     padding: 10px;
-    background: rgba(10, 10, 15, 0.85);
+    background: rgba(5, 18, 38, 0.9);
     border-radius: 8px;
-    border-top: 1px solid #ff9100;
+    border-top: 2px solid #00f0ff;
+    box-shadow: 0 -5px 15px rgba(0, 240, 255, 0.3);
 }
