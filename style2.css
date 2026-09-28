@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 #splash-screen {
     position: fixed;
     top: 0;
@@ -19,34 +18,58 @@
     max-width: 600px;
 }
 
-
-
-
-
+h2 {
+    display: inline-block; /* Faz o fundo se ajustar ao conteúdo */
+    background-color: rgba(255, 255, 255, 0.733);
+    padding: 4px 8px; /* Ajuste conforme necessário */
+    font-size: 30px; /* Certifique-se de que o tamanho da fonte está correto */
+    line-height: 1.2; /* Pode ajudar a alinhar verticalmente */
+    box-shadow: 2px 7px 7px black;
+    border-radius: 10px;
+    text-align: center;
+}
 
 body {
     max-width: 1000px;
     margin: auto;
     margin-bottom: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    background: url(temporada1/imagens/fundo1.jpg) no-repeat top center;
-    background-size: cover;
+    
+    /* Fundo em gradiente com variação do Laranja Claro ao Laranja Escuro */
+    background: linear-gradient(-45deg, #ff4500, #ff7b00, #ffae00, #c83200);
+    background-size: 400% 400%;
+    
+    /* Animação que simula o movimento suave */
+    animation: ondasDoMar 12s ease infinite;
     background-attachment: fixed;
 }
 
+/* Animação para deslocar suavemente o gradiente */
+@keyframes ondasDoMar {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 span#burguer {
-    background-color: rgba(0, 0, 0, 0.400);
+    background-color: rgba(0, 0, 0, 0.637);
     color: rgb(255, 255, 255);
     display: block;
     text-align: center;
-    padding: 10px;
+    padding: 2px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 span#burguer:hover {
-    background-color: rgba(255, 255, 255, 0.555);
-    color: black;
+    background-color: rgba(255, 255, 255, 0.192);
+    color: rgb(255, 255, 255);
 }
 
 ul {
@@ -69,44 +92,29 @@ menu {
     margin-inline-end: 0px;
     padding-inline-start: 0px;
     unicode-bidi: isolate;
-    
-  
-    
 }
 
 menu > ul {
-    
     list-style-type: none;
-    
-
-    
 }
 
-
-
 menu > ul > li > a {
-    background-color: gray;
+    background-color: rgba(255, 255, 255, 0.192);
     display: flex;
     padding: 12px;
     text-decoration: none;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.400);
+    background-color: rgba(0, 0, 0, 0.637);
     color: rgb(255, 255, 255);
     border-top: 2px solid rgba(128, 128, 128, 0);
     columns: 3;
     flex-shrink: 1;
     flex-grow: 1;
-
-    
 }
 
 menu > ul > li > a:hover {
-    background-color: rgba(255, 255, 255, 0.377);
-    
-    
+    background-color: rgba(255, 255, 255, 0.192);
 }
-
-
 
 h6 {
     font-size: 1.5em;
@@ -117,19 +125,17 @@ h6 {
     padding: 5px;
     box-shadow: 2px 7px 7px black;
     border-radius: 10px;
-    text-align: center;
-    
 }
 
 selection > img {
     margin: 0 auto;
-    width: 80%;
+    width: 50%;
     height: auto;
     border-radius: 20px 0px;
     box-shadow: 2px 7px 7px black;
     text-align: center;
     display: block;
-    }
+}
 
 section#redes-sociais {
     text-align: center;
@@ -146,8 +152,6 @@ section#redes-sociais img {
 header {
     min-height: 80px;
     text-align: center;
-    text-align: center;
-
 }
 
 header > img {
@@ -160,15 +164,13 @@ header > img {
 
 header > h3 {
     font-size: 1.5em;
-    background-color: rgba(255, 255, 255, 0.555);
+    background-color: rgba(255, 255, 255, 0.192);
     min-height: 0px;
     text-align: center;
     margin: 20px;
     padding: 5px;
     box-shadow: 2px 7px 7px black;
     border-radius: 10px;
-    text-align: center;
-
 }
 
 li {
@@ -177,12 +179,10 @@ li {
     text-align: center;
     margin: 5px;
     padding: 5px;
-    text-align: center;
     columns: 3;
-    
 }
 
-ul > li > a{
+ul > li > a {
     display: block;
     padding: 15px;
     text-decoration: none;
@@ -191,32 +191,27 @@ ul > li > a{
     color: rgb(255, 255, 255);
     border-top: 2px solid rgba(0, 0, 0, 0);
     border-radius: 10px 10px;
-    
-    
-
 }
 
 h1 {
     font-size: 1.5em;
-    background-color: rgba(255, 255, 255, 0.555);
+    background-image: linear-gradient(to right, rgb(255, 145, 0), rgb(208, 255, 0));
     min-height: 0px;
     text-align: center;
     margin: 20px;
     padding: 5px;
     box-shadow: 2px 7px 7px black;
-    /* border-radius: 15px 0px; */
-    text-align: center;
-    
+    border-radius: 15px 15px;
 }
 
- h5 {
-    color: rgb(255, 255, 255);
+h5 {
+    color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 1em;
+    font-size: 1.5em;
     margin: 5px;
     padding: 0px;
-    background-color: rgba(4, 1, 19, 0.5);
-    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.592);
+    border-radius: 15px;
     box-shadow: 2px 7px 7px black;
 }
 
@@ -229,12 +224,9 @@ nav {
     padding: 5px;
     box-shadow: 2px 7px 7px black;
     border-radius: 10px;
-    text-align: center;
-    
 }
 
-
-footer  > h4 {
+footer > h4 {
     color: #000000;
     text-align: center;
     font-size: 1em;
@@ -243,7 +235,67 @@ footer  > h4 {
     background-color: rgba(255, 230, 3, 0.74);
     border-radius: 5px;
     box-shadow: 2px 7px 7px black;
-    
 }
 
+.banner-frase {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    color: white;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 3s ease-in-out;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.episodios {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: rgba(247, 247, 247, 0.349);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #ffee00;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+}
